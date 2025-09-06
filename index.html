@@ -1,0 +1,246 @@
+<!DOCTYPE html> <!--ประกาศไฟล์เป็น HTML-->
+<html lang="th"> <!--ประกาศภาษาของไฟล์เป็นภาษาไทย-->
+<head>
+    <meta charset="UTF-8"> <!--รองรับการใช้งานอักขระได้หลากหลายภาษา-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--รองรับการใช้งานบนแพลต์ฟอร์มอื่น(Responsive)-->
+    <title>My Shop</title> <!--หัวเว็บไซต์-->
+    <link rel="stylesheet" href="mystyle.css"> <!--เชื่อม External CSS-->
+</head>
+
+<body>
+<main>
+    
+    <!--ส่วน Home-->
+    <section id="Home"> 
+    
+
+            <header> <!--ระบุส่วนเป็น Header-->
+                <div class="icon">
+                    <a href="#Home"><img src="resources/Myshop_Logo.png" alt="My Shop Logo"></a> <!--รูปโลโก้พร้อมลิงค์ไปส่วน Home-->
+                </div>
+                    <div lang="en"> <!--กำหนดภาษาหลักเป็นอังกฤษ-->
+                        <nav class="header-nav"> <!--กำหนด Role เป็น Navigator-->
+                            <ul>
+                                <li><a href="#Home">Home</a></li> <!--Link ไปส่วน Home-->
+                                <li><a href="#Recommend">Recommend</a></li> <!--Link ไปส่วน Product List-->
+                                <li><a href="#Category">Category</a></li> <!--Link ไปส่วน footer-->
+                                <li><a href="#Contact">Contact</a></li> <!--Link ไปส่วน footer-->
+                                <li><a href="#About-Us">About Us</a></li> <!--Link ไปส่วน About Us-->
+                            </ul>
+                        </nav>
+                    </div>            
+                </header>
+    
+        <!--วิดีโอหน้า Home-->
+        <section>
+            <div class="video-home"> 
+                <video controls id="myVideo">
+                        <source src="resources/แนะนำร้าน.mp4" type="video/mp4">
+                        เบราว์เซอร์ของคุณไม่รองรับวิดีโอนี้
+                    </video>
+                    <section id="Recommend"></section>
+                </div>
+        
+        </section>
+
+        <!--Recommend Section-->
+        <section> 
+
+            <div class="Recommend"> 
+                <h2><strong>**สินค้าแนะนำ**<hr></strong></h2> <!--ข้อความสินค้าแนะนำ-->
+            </div>
+         
+            <div class="Product-Box">
+                <div class="Product">
+                    <figure><img src="resources/Shin_Burning_Gundam.jpg" alt="HG 1/144 Shin Burning Gundam" title="ภาพสินค้าจากเว็บไซต์ Bandai"> <!--รูปสินค้า 1-->
+                    <figcaption>https://th.gundam.info/news/gunpla/01_13014.html</figcaption>
+                    </figure>
+                        <div class="Product-Info">
+                            <h3>HG 1/144 Shin Burning Gundam</h3>
+                            <p>ชุดโมเดลเกรดสูงจากซีรีส์วิดีโอ Gundam Build Metaverse ฉลองครบรอบ 10 ปีของ แฟรนไชส์ กันดั้มบิลด์ มันคือโมบิลสูทรุ่น Burning Gundam ยอดนิยม ที่มีดีไซน์โดดเด่นและชิ้นส่วนเอฟเฟกต์อันน่าประทับใจ</p>
+                        </div>
+                        
+                </div>
+                
+                <div class="Product">
+                    <figure><img src="resources/Gquux.jpg" alt="HG GQ 1/144 Gundam GQuuuuuuX" title="ภาพสินค้าจากเว็บไซต์ Bandai"> <!--รูปสินค้า 2-->
+                    <figcaption>https://www.xmodeltoys.com/Data/Bandai-HG-GQuuuuuuX/catalog.php?id_prd=6109</figcaption>
+                    </figure>
+                         <div class="Product-Info">
+                            <h3>HG GQ 1/144 Gundam GQuuuuuuX</h3>
+                            <p>เป็นโมเดลเกรดสูงของกันดั้มจากซีรีส์ใหม่ภาพยนตร์และซีรีส์ Mobile Suit Gundam GQuuuuuuX โดดเด่นด้วยดีไซน์อันเป็นเอกลักษณ์และจุดขยับที่แข็งแรง</p>
+                        </div>
+                </div>
+                 
+                <div class="Product">
+                    <figure><img src="resources/Magikarp.jpg" alt="Pokemon Model Kit BIG 01 MAGIKARP" title="ภาพสินค้าจากเว็บไซต์ Bandai"> <!--รูปสินค้า 3-->
+                    <figcaption>https://www.hlj.com/pokemon-plastic-model-collection-big-01-magikarp-bans61338</figcaption>
+                    </figure>
+                        <div class="Product-Info">
+                            <h3>Pokemon Model Kit BIG 01 MAGIKARP</h3>
+                            <p>ขอแนะนำ Bandai Pokemon Plamo Collection Big #01 ที่มาพร้อมกับ Magikarp อันโด่งดัง ถือเป็นของสะสมที่แฟนโปเกมอนทุกคนต้องมี!</p>
+                        </div>
+                </div>
+                    
+                <div class="Product">
+                    <figure><img src="resources/MetalGreyMon.jpg" alt="Bandai Digimon Adventure Figure-rise Standard Amplified MetalGreymon (Vaccine) Model Kit" title="ภาพสินค้าจากเว็บไซต์ Bandai"> <!--รูปสินค้า 4--></figure>
+                    <figcaption>https://www.vcagundam.com/product/3464/figure-rise-standard-amplified-metalgreymon-vaccine</figcaption>
+                        <div class="Product-Info">
+                            <h3>Bandai Digimon Adventure Figure-rise Standard Amplified MetalGreymon (Vaccine) Model Kit</h3>
+                            <p>MetalGreymon (สายพันธุ์วัคซีน)" จาก "Digimon Adventure" อยู่ในซีรีส์ Figure-rise Standard Amplified</p>
+                        </div>
+                </div>
+                    
+                <div class="Product">
+                    <figure><img src="resources/Blackwargreymon.webp" alt="Bandai Digimon Figure-Rise Standard Blackwargreymon Plastic Model Kit" title="ภาพสินค้าจากเว็บไซต์ Bandai"> <!--รูปสินค้า 5-->
+                    <figcaption>https://www.1999.co.jp/eng/10971231?srsltid=AfmBOor07tMFEBmnAAHgBmfzYpQDqdJTVRDBIfxXT528pcKrMYsqBHAQ</figcaption>
+                    </figure>
+                        <div class="Product-Info">
+                            <h3>Bandai Digimon Figure-Rise Standard Blackwargreymon Plastic Model Kit</h3>
+                            <p>ชุดโมเดลพลาสติกที่ประกอบด้วย Digimon อันโด่งดังจาก Digimon Adventure 02 มันคือชุดประกอบแบบสแนปที่ไม่ต้องใช้กาวหรือสีทำให้เป็นตัวเลือกที่ยอดเยี่ยมสำหรับผู้เริ่มต้นสร้างโมเดลหรือผู้ที่ชื่นชอบงานอดิเรกที่มีประสบการณ์</p>
+                        </div>
+                </div>
+
+                <div class="Product">
+                    <figure><img src="resources/Sakura_War.jpg" alt="Project Sakura Wars 1/35 Scale Plastic Model Kit Vol.1 Spiricle Armor Kobu Type-3 (Sakura Amamiya)" title="ภาพสินค้าจากเว็บไซต์ SEGA"> <!--รูปสินค้า 6-->
+                    <figcaption>https://www.animeherald.com/2019/04/22/sega-details-project-sakura-wars-setting-mecha-cast/</figcaption>
+                    </figure>
+                        <div class="Product-Info">
+                            <h3>Project Sakura Wars 1/35 Scale Plastic Model Kit Vol.1 Spiricle Armor Kobu Type-3 (Sakura Amamiya)</h3>
+                            <p>สนุกไปกับราคาสุดคุ้ม! โมเดลพลาสติก Mitsutake ประเภทที่ 3 (Sakura Amamiya) ที่ปรากฏใน [New Sakura Wars] วางจำหน่ายแล้ว!</p>
+                        </div>
+                </div>
+
+                <div class="Product">
+                    <figure><img src="resources/Lego_City.jpg" alt= "LEGO City Town 60097 City Square" title="ภาพสินค้าจากเว็บไซต์ LEGO"> <!--รูปสินค้า 7-->
+                    <figcaption>https://www.tokopedia.com/gvonline/lego-original-city-66405-city-trains-super-pack-4-in-1-mainan-anak</figcaption>
+                    </figure>
+                        <div class="Product-Info">
+                            <h3>LEGO City Town 60097 City Square</h3>
+                            <p>ประกอบด้วยชิ้นส่วน 1,683 ชิ้น และมินิฟิกเกอร์ 14 ตัว ประกอบด้วยยานพาหนะและอาคารหลากหลายรูปแบบ เพื่อสร้างบรรยากาศเมืองที่คึกคัก</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="Category"></section>
+        
+        <!--ส่วน Catagory-->
+        <section> 
+            <div class="table-container">
+                <table cellspacing="0" cellpadding="10" width="100%"> <!--ใช้ Table สำหรับตกแต่ง (เพื่อให้ Tags ครบตามที่สอน)-->
+                    <div id="Contact"></div>
+                    <tr>
+                        <th>
+                            <div class="Product-Text">
+                                <h2>Category</h2>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="Category-Section">
+                                
+                                <div class="Category">
+                                    <img src="resources/Gundam.png" alt="Gundam" title="หมวดหมู่ Gundam"> <!--รูปหมวดหมู่ 1-->
+                                <h1 id="Cat">Gundam</h1>
+                                </div>
+                                
+                                <div class="Category">
+                                    <img src="resources/Pokemon.png" alt="Pokemon" title="หมวดหมู่ Pokemon"> <!--รูปหมวดหมู่ 2-->
+                                    <h1 id="Cat">Pokemon</h1>
+                                </div>
+                                
+                                <div class="Category">
+                                    <img src="resources/Digimon.webp" alt="Digimon" title="หมวดหมู่ Digimon"> <!--รูปหมวดหมู่ 3-->
+                                    <h1 id="Cat">Digimon</h1>
+                                </div>
+
+                                <div class="Category">
+                                    <img src="resources/Bandai.png" alt="Bandai" title="หมวดหมู่ Bandai"> <!--รูปหมวดหมู่ 4-->
+                                </div>
+                                
+                                <div class="Category">
+                                    <img src="resources/Lego.jpg" alt="Lego" title="หมวดหมู่ Lego"> <!--รูปหมวดหมู่ 5-->
+                                </div>
+                                
+                                <div class="Category">
+                                    <img src="resources/Tamiya.png" alt="Tamiya" title="หมวดหมู่ Tamiya"> <!--รูปหมวดหมู่ 6-->
+
+                                </div>
+                                  
+                                <div class="Category">
+                                    <img src="resources/Tool.png" alt="Tool" title="หมวดหมู่ Tool"> <!--รูปหมวดหมู่ 7-->
+                                    <h1 id="Cat">Tool Kit</h1>
+                                
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+        <!--ส่วน Contact-->
+        </section>
+        <div id="contact"></div>
+        <section>
+            <div class="contact">
+                <h1>Contact</h1>
+                <div class="icon-contact">
+                    <a href="https://www.facebook.com/profile.php?id=61557547647530"><img src="resources/Facebook.webp" alt="Facebook" title="ช่องทางติดต่อ Facebook"></a>
+                    <a href="https://www.instagram.com/n.n0nsinghasenee/"><img src="resources/Instagram.png" alt="Instagram" title="ช่องทางติดต่อ Instagram"></a>
+                    <a href="https://line.me/ti/p/rRKOQ0JYq9"><img src="resources/Line.png" alt="Line" title="ช่องทางติดต่อ Line"></a>
+                    <ol>
+                        <li>
+                            <p>Tel:095-360-4387 <br> ร้านค้า My Shop<hr></p><br>
+                        </li>
+                        <li>
+                            <p>Tel:065-865-4936 <br> เบอร์ส่วนตัว</p><hr>
+                        </li>
+                    </ol>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <about-us id="About-Us">
+        
+        <!--ส่วน About Us-->
+        <section> 
+            <div class="About-Us-Section">            
+                <div class="video-background">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="resources/Background-Video.mp4" type="video/mp4">
+                        เบราว์เซอร์ของคุณไม่รองรับวิดีโอนี้
+                    </video>
+                </div>
+
+                    <div class="About-Us-Text">
+                        <h1 class="cursor typewriter-animation">About <span id="Color-Text">Us<hr></span></h1>
+                        <p> ร้าน "My Shop" ก่อตั้งโดย <span id="Color-Text">"นล"</span> ผู้ได้รับแรงบันดาลใจเต็มเปี่ยมมาจากคุณพ่อผู้เป็นนักสะสม พ่อสอนเขาเสมอว่าของเล่นทุกชิ้นคือ "กล่องความทรงจำ" 
+                            ที่เต็มไปด้วยเรื่องราวและจินตนาการในวัยเด็กเมื่อคุณพ่อจากไป นลได้สืบทอดคอลเลกชันล้ำค่านี้ แทนที่จะเก็บมันไว้ดูเพียงคนเดียว เขาตัดสินใจเปลี่ยนมรดก
+                            และความหลงใหลส่วนตัวให้กลายเป็นพื้นที่แห่งการแบ่งปัน จึงเป็นที่มาของร้านเล็กๆ ที่ชื่อว่า "My Shop" เพราะทุกอย่างเริ่มต้นจาก "ของของฉัน" และ "ความทรงจำของฉัน"
+                            "My Shop" จึงไม่ใช่แค่ร้านค้า แต่เป็นจุดนัดพบของกาลเวลา ที่ซึ่งผู้คนสามารถกลับมาค้นหาชิ้นส่วนความสุขในอดีต และแบ่งปันเรื่องราวผ่านของเล่นชิ้นโปรด 
+                        </p>
+                    </div>
+            </div>
+        </section>
+        <section id="Contact"></section>
+        
+        <!--ส่วน Footer-->
+        <footer> 
+            <div class="footer-section">
+                 <p>&copy; 2025 My Shop. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+    </main>
+</body>
+</html>
+
+<!--
+แท็กที่ใช้เพิ่มเติมได้แก่
+<nav> ใช้สำหรับนำทางในหน้าเว็บ
+<figcaption> ใช้สำหรับบอกที่มาของรูปภาพใต้รูป
+<Header> <main> <footer> <section> เพื่อจัดองค์ประกอบเว็บไซต์
+<hr> ใช้ตกแต่งคอลัมน์
+-->

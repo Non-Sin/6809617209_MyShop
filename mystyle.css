@@ -1,0 +1,309 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*ฟังก์ชันสำหรับกำหนดค่าเริ่มต้นของเว็บ เพื่อให้จัดง่ายขึ้น*/
+
+header {
+  background-color: rgb(21, 77, 113); /*ปรับสีของพื้นหลัง*/
+  display: flex; /*จัดองค์ประกอบแบบ Flexbox*/
+  align-items: center; /*จัด Content แนวตั้งให้อยู่ตรงกลาง*/
+  justify-content: space-between; /*จัด Content แรกให้อยู่ซ้ายสุด และ Content สองอยู่ขวาสุด*/
+  position: sticky; /*ทำให้หน้าเว็บติดด้านบน*/
+  top: 0; /*กำหนดให้ Header อยู่ด้านบน*/
+  padding: 0.5rem 2rem; /*จัด Content บน-ล่าง กับ ซ้าย-ขวา*/
+  z-index: 10;
+  padding-bottom: 10px;
+}
+
+.header-nav ul {
+  display: flex; 
+  list-style: none; /*เอา Bullet ออก*/
+  gap: 3.75rem; /*กำหนดระยะห่างระหว่าง Content*/
+}
+
+.header-nav a {
+  text-decoration: none; /*ลบเส้นใต้ออก*/
+  color: rgb(255, 249, 175); /*ใส่สีข้อความ*/
+  font-weight: bold; /*ทำตัวหนา*/
+  font-size: 1rem; /*ปรับขนาดฟอนต์*/
+  font-family: Arial;
+}
+
+
+.icon img {
+    width: 60px; /*ปรับความกว้างรูป*/
+    height: auto; /*ปรับความสูงอัตโนมัติ*/
+}
+
+.Recommend h2 {
+  padding: 1rem; 
+  text-align: center; /*จัด Text ให้อยู่ตรงกลาง*/
+  color: rgb(21, 77, 113); /*ปรับสีฟอนต์*/
+}
+
+.Recommend {
+  background-color: rgb(255, 249, 175); /*ปรับสีพื้นหลัง Recommend*/
+}
+
+.Product-Box {
+  display: flex;
+  gap: 20px; /*ระยะห่างระหว่าง Card Product*/
+  overflow-x: auto; /*สร้างแถบเลื่อน*/
+  scrollbar-color: rgb(21, 77, 113) rgb(255, 249, 175); /*สีของแถบเลื่อน*/
+  background-color: rgb(21, 77, 113); /*สีของพิ้นหลัง*/
+  padding: 10px; /*ปรับระยะห่างของขอบ Padding*/
+}
+
+.Product {
+  background-color: white; /*สีพื้นหลังของการ์ด*/
+  border: 1px solid #ddd; /*ขอบของการ์ด*/
+  border-radius: 8px; /*เพิ่มความโค้งมน*/
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /*เงาของการ์ด*/ 
+  transition: transform 0.2s; /*อนิเมชั่นลอย*/
+  width: 400px; /*ความกว้างของการ์ด*/
+  flex-shrink: 0; /*ป้องกันการย่อขนาดของการ์ด*/
+  overflow: hidden; /*ตัดส่วนการ์ดที่ล้นออก และการ์ดที่เหลือจะถูกซ่อนไว้*/
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Product img {
+  width: 100%; /*ปรับความกว้างในการ์ดให้แสดงเต็มการ์ด*/
+  height: auto; /*ปรับความสูงอัตโนมัติ*/
+  display: block; /*ลบช่องว่างใต้ภาพ*/
+}
+
+.Product:hover {
+  transform: translateY(-5px); /*อนิเมชั่นลอย*/
+}
+
+.Product-Info {
+     padding: 15px; /*กำหนดขอบ Padding ของข้อความในการ์ด*/
+}
+
+.Product-Info h3 {
+  margin-bottom: 8px; /*เว้นวรรคระหว่าง Product name กับ Product Description*/
+}
+
+.Category-Section {
+  background-color: #34699A;
+  padding: 50px;
+  display: flex;
+  gap: 100px;
+}
+
+.Category {
+  background-color: rgb(255, 249, 175); /*สีพื้นหลังของวงกลม*/
+  border-radius: 50%; /*เพิ่มความโค้งมน*/
+  width: 200px; /*ความกว้างของวงกลม*/
+  height: 200px; /*ความสูงของวงกลม*/
+  color: rgb(0, 0, 0); /*สีของฟอนต์ในวงกลม*/
+  display: flex; 
+  flex-direction: column; /*จัดรูปแบบเป็น Column*/
+  justify-content: center; /*จัดวางแนวตั้งในรูปแบบ Column*/
+  align-items: center; /*จัดวางแนวนอนในรูปแบบ Column*/
+  transition: transform 0.2s; /*อนิเมชั่นลอย*/
+}
+
+.Category :hover {
+  transform: translateY(-5px); /*อนิเมชั่นลอย*/
+}
+
+.Product-Text {
+  text-align: left; /*จัดให้ฟอนต์อยู่ชิดซ้ายสุด*/
+  background-color: rgb(11, 65, 99); /*พื้นหลังของสี*/
+  padding-top: 10px; /*จัด Padding ด้านบน ของ Product List*/
+  padding-left: 100px; /*จัด Padding ด้านซ้าย ของ Product List*/
+  color: rgb(255, 249, 175); /*สีฟอนต์*/
+}
+
+.Product-Text h2 {
+  padding-top: 30px; /*ปรับ Padding ด้านบน*/
+  font-size: 3.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Category img {
+  width: 60%; /*ปรับความกว้างภาพให้พอดีกับวงกลม*/
+  height: auto; /*ปรับความสูงอัตโนมัติ*/
+}
+
+.table-container {
+  overflow-x: auto; /*สร้างแถบเลื่อน*/
+  width: 100%; /*แถบเลื่อนกว้างเต็ม 100%*/
+  scrollbar-color: rgb(21, 77, 113) rgb(255, 249, 175); /*สีของแถบเลื่อน*/
+}
+
+.video-background {
+    width: 100%; /*ทำให้วิดีโอเต็มจอ*/
+    height: 100%; /*แสดงผลความสูง 100% ไม่เสียสัดส่วน*/
+    background-size: cover; /*ทำให้คลุมเต็มจอ*/
+    position: absolute; /*ทำให้ตำแหน่งเป็น Absolute*/
+    max-height: 400px; /*ปรับความสูงมากสุด*/
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*ทำให้วิดีโอเต็มพื้นที่โดยไม่เสียสัดส่วน*/
+}
+
+.About-Us-Text {
+    position: relative; /*ทำให้เนื้อหาลอยอยู่เหนือวิดีโอ*/
+    z-index: 2;
+    color: rgb(255, 249, 175); /*เปลี่ยนสีตัวอักษรให้อ่านง่ายบนวิดีโอ*/
+    padding-top: 100px; /*ปรับ Padding ตัวอักษร*/
+}
+
+.About-Us-Text p {
+  font-size: 1.0rem; /*ปรับขนาดตัวอักษร*/
+  max-width: 900px; /*ปรับความกว้างเว็บ*/
+  text-shadow: 0 0 10px rgb(253, 253, 253), 0 0 0px rgb(21, 77, 113); /*สร้างเอฟเฟคเรืองแสง*/
+  font-weight: bold; /*ทำฟอนต์หนา*/
+  text-align: center;
+}
+
+.About-Us-Text h1 {
+  font-size: 3rem; /*ขนาดฟอนต์ About Us*/
+  text-shadow: 0 0 10px rgb(255, 249, 175); /*สร้างเอฟเฟคเรืองแสง*/
+}
+
+.cursor {
+    position: relative; /*ทำให้อยู่เหนือ Layer ได้*/
+    width: 24em; /*ปรับความกว้าง*/
+    margin: 0 auto; /*ปรับ Margin*/
+    border-right: 2px solid rgba(255,255,255,.75); /*สร้าง Cursor*/
+    text-align: center; /*วางข้อความตรงกลาง*/
+    white-space: nowrap; /*ไม่เว้นวรรคข้อความ*/
+    overflow: hidden; /*ซ่อนข้อความที่ล้น*/
+    transform: translateY(-30%); /*จัดวางตำแหน่งความสูง*/
+} /*Cursor สำหรับอนิเมชั่น typewriter-animation*/
+
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, /*ทำให้ขยับ*/
+     blinkingCursor 500ms steps(50) 1s 3 normal forwards; /*ทำให้กะพริบ*/
+}
+
+.About-Us-Section {
+  background-color: rgb(21, 77, 113); /*สีพื้นหลัง About-Us*/
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+} /*อนิเมชั่นขยับ Cursor*/
+
+@keyframes blinkingCursor {
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+} /*อนิเมชั่นกะพริบ*/
+
+.footer-section {
+  display: flex; 
+  justify-content: center;
+  align-items: end; /*ทำให้อยู่ล่างสุด*/
+  background-color:rgb(21, 77, 113) ;
+  z-index: -2; /*ทำให้อยู่ด้านหลัง*/
+  position: relative;
+  height: 20vh; /*ปรับความสูง*/
+}
+
+.footer-section p {
+  color: rgb(255, 249, 175); /*สีฟอนต์ p*/
+}
+
+.contact {
+  background-color: rgb(21, 77, 113); /*สีพื้นหลัง*/
+}
+
+.contact h1 {
+  text-align: center; /*ทำให้ Text อยู่ตรงกลาง*/
+  font-size: 3rem; /*ปรับขนาดฟอนต์*/
+  color: rgb(255, 249, 175); /*ปรับสีฟอนต์*/
+  padding-top: 10px; 
+  padding-bottom: 10px;
+}
+
+.icon-contact {
+  display: flex;
+  gap: 30px;
+  justify-content: center ;
+  padding-bottom: 20px;
+  color: rgb(255, 249, 175)
+}
+
+.icon-contact p {
+  padding-left: 10;
+}
+
+.icon-contact img{
+  width: 100px;
+  height: auto;
+}
+
+.video-home {
+    z-index: -1; 
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  background-color: #34699A;
+}
+
+.Parent-box {
+  display: flex;
+  flex-flow: column;
+}
+
+#Color-Text {
+  color: #84afd8;
+}
+
+figcaption {
+  font-size: 11px;
+  padding-left: 10px;
+}
+
+
+/*Media Queries สำหรับปรับให้เข้ากับจอมือถือ (Responsive)*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /*ปรับ Content เป็นแนวตั้ง*/
+    padding: 1rem; /*ปรับขนาด*/
+  }
+
+  .header-nav ul {
+    margin-top: 1rem; /*เว้นวรรคระหว่าง Logo*/
+    gap: 1.5rem; /*ระยะห่างระหว่าง Text*/
+  }
+
+  .content {
+    overflow-wrap: break-word; /*ตัดข้อความที่เกินออก*/
+    margin-left: 5%; /*ปรับ Margin ซ้าย*/
+    margin-right: 5%; /*ปรับ Margin ขวา*/
+  }
+
+  .About-Us-Text p {
+    white-space: nowrap; /* ป้องกันการขึ้นบรรทัดใหม่ */
+    overflow: hidden;    /* ซ่อนข้อความส่วนที่ล้นออกไป */
+    text-overflow: ellipsis; /* เพิ่มจุดไข่ปลา (...) ในส่วนที่ถูกซ่อน */
+    width: 250px;        /* กำหนดความกว้างของคอนเทนเนอร์ */
+  }
+
+  .icon-contact p {
+    display: none; /*ทำให้ไม่แสดงข้อความ*/
+  }
+
+  ol {
+    display: none; /*ทำให้ไม่แสดงข้อความ*/
+  }
+
+  }
