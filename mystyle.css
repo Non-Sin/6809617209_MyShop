@@ -122,6 +122,7 @@ header {
   padding-top: 30px; /*ปรับ Padding ด้านบน*/
   font-size: 3.5rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(255, 249, 175);
 }
 
 .Category img {
@@ -271,6 +272,93 @@ figcaption {
   font-size: 11px;
   padding-left: 10px;
 }
+
+main {
+  background-color: #23588a;
+}
+
+.catgory-sign {
+  background-color: #23588a;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+#catgory-sign {
+  border-radius: 40%;
+  background-color: rgb(255, 249, 175);
+}
+
+.catgory-sign h1 {
+  color: rgb(21, 77, 113);
+  font-size: 50px;
+  font-family: Helvetica;
+}
+
+.catgory-productbox {
+ display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    transition: transform 0.2s;
+    background-color: rgb(52, 113, 163);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.catgory-productbox :hover {
+  transform: translateY(-5px); /*อนิเมชั่นลอย*/
+}
+
+
+
+.catgory-productcard img {
+  width: 100%;
+}
+
+.catgory-productcard {
+  margin-top: 50px;
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+
+
+.catgory-productcard h3, h2 {
+  color: rgb(21, 77, 113);
+}
+
+.catgory-productcard p {
+  font-size: 1rem;
+  width: 100%;
+}
+
+
+.catgory-productcard h2 {
+  font-size: 2rem;
+  text-align: right;
+  padding-top: 20px;
+}
+
+.catgory-productcard-detail {
+  padding: 10px;
+}
+
+.footer-section2 {
+  text-align: center;
+  margin-top: 100px;
+  color: rgb(255, 249, 175);
+}
+
+
 
 
 /*Media Queries สำหรับปรับให้เข้ากับจอมือถือ (Responsive)*/
