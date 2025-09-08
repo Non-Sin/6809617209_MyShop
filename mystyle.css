@@ -282,7 +282,7 @@ main {
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 #catgory-sign {
@@ -306,7 +306,7 @@ main {
     padding-right: 50px;
     padding-bottom: 50px;
     border-radius: 50px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -358,7 +358,27 @@ main {
   color: rgb(255, 249, 175);
 }
 
+.Category2 {
+  background-color: rgb(255, 249, 175); /*สีพื้นหลังของวงกลม*/
+  border-radius: 50%; /*เพิ่มความโค้งมน*/
+  width: 200px; /*ความกว้างของวงกลม*/
+  height: 200px; /*ความสูงของวงกลม*/
+  color: rgb(0, 0, 0); /*สีของฟอนต์ในวงกลม*/
+  display: flex; 
+  flex-direction: column; /*จัดรูปแบบเป็น Column*/
+  justify-content: center; /*จัดวางแนวตั้งในรูปแบบ Column*/
+  align-items: center; /*จัดวางแนวนอนในรูปแบบ Column*/
+  margin-top: 5px;
+}
 
+.Category2 img {
+  width: 130px;
+}
+
+.Cat2 {
+  display: flex;
+  justify-content: center;
+}
 
 
 /*Media Queries สำหรับปรับให้เข้ากับจอมือถือ (Responsive)*/
