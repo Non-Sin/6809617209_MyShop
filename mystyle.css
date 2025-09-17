@@ -392,6 +392,7 @@ main {
 
 
 /*Media Queries สำหรับปรับให้เข้ากับจอมือถือ (Responsive)*/
+
 @media (max-width: 768px) {
   header {
     flex-direction: column; /*ปรับ Content เป็นแนวตั้ง*/
@@ -423,5 +424,20 @@ main {
   ol {
     display: none; /*ทำให้ไม่แสดงข้อความ*/
   }
+
+  .catgory-productbox {
+ display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    transition: transform 0.2s;
+    background-color: rgb(52, 113, 163);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
   }
